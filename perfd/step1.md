@@ -6,15 +6,15 @@ report. Первый коммит в репозиторий.
 ## Perf - вручную
 1. Установить linux perf
 2. Запустить `perf record -a -- sleep 10`
-3. Запустить `perf report`. Посмотреть на выдачу
+3. Запустить `perf script`. Посмотреть на выдачу
 ## Github
 5. Сделать форк linux-perfd/perfd на гитхабе.
 ## Git
 6. Склонировать свой форк на компьютер.
 ## Perf - скрипт
 4. Создать perfd.py
-4. Написать код на python, который будет запускать perf record и perf report.
-   Выдачу perf report (stdout) сохранять в буфер.
+4. Написать код на python, который будет запускать perf record и perf script.
+   Выдачу perf script (stdout) сохранять в буфер.
    Печатать буфер.
 ## Git
 1. git add perfd.py
