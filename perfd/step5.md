@@ -1,11 +1,16 @@
 # Задание
-Конвертирование профиля. Для всех perf файлов: perf2bolt. merge-fdata.
+Подготовка профиля к использованию в BOLT:
+- Конвертирование профиля: perf2bolt.
+- Объединение профилей: merge-fdata.
 # План
+Установить BOLT: [инструкция](https://github.com/facebookincubator/BOLT/tree/main/bolt#manual-build).
+
+В скрипте:
 1. Задать функцию, которая для данного объектного файла подготовит .fdata файл
     для BOLT (`prepare_fdata(objfile)`)
     - Найти в БД все perf файлы, содержащие сэмплы с данным объектным файлом.
-    - Для каждого perf.suffix файла вызвать perf2bolt:
-        `perf2bolt objfile -p perf.suffix -o perf.suffix.fdata`
+    - Для каждого perf файла вызвать perf2bolt:
+        `/path/to/perf2bolt objfile -p perf_file -o perf_file.fdata`
     - Объединить все полученные fdata файлы при помощи merge-fdata:
-        `merge-fdata perf.suffix1.fdata1 perf.suffix2.fdata ... -o objname.fdata`
-2. Функция возвращает путь к fdata файлу.
+        `/path/to/merge-fdata perf_file1.fdata perf_file2.fdata ... -o tmp_fdata`
+2. Функция возвращает путь к tmp_fdata файлу.
