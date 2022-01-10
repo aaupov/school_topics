@@ -12,5 +12,5 @@
     - Для каждого perf файла вызвать perf2bolt:
         `/path/to/perf2bolt objfile -p perf_file -o perf_file.fdata`
     - Объединить все полученные fdata файлы при помощи merge-fdata:
-        `/path/to/merge-fdata perf_file1.fdata perf_file2.fdata ... -o tmp_fdata`
+        `/path/to/merge-fdata perf_file1.fdata perf_file2.fdata ... > tmp_fdata`
 2. Функция возвращает путь к tmp_fdata файлу.
