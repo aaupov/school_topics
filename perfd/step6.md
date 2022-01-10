@@ -4,7 +4,7 @@
 1. Задать функцию, которая для данного объектного файла подготовит вызов BOLT:
 (`invoke_bolt(objfile, fdata_file) -> outfile`)
     - Сформировать уникальное имя для оптимизированного объектного файла (outfile)
-    - `/path/to/llvm-bolt objfile -data=fdata_file -o outfile`
+    - `/path/to/llvm-bolt objfile -data=fdata_file -o outfile -dyno-stats`
 2. После обновления записей в БД: 
     - Найти объектные файлы, для которых _суммарное количество
     сэмплов во всех perf файлах_ превышает заданный порог (например, N=100).
