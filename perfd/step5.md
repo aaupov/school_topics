@@ -3,7 +3,7 @@
 - Конвертирование профиля: perf2bolt.
 - Объединение профилей: merge-fdata.
 # План
-Установить BOLT: [инструкция](https://github.com/facebookincubator/BOLT/tree/main/bolt#manual-build).
+Установить BOLT: [инструкция](https://github.com/llvm/llvm-project/tree/main/bolt#manual-build).
 
 В скрипте:
 1. Задать функцию, которая для данного объектного файла подготовит .fdata файл
