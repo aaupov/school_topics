@@ -4,7 +4,10 @@
 1. Задать функцию, которая для данного объектного файла подготовит вызов BOLT:
 (`invoke_bolt(objfile, fdata_file) -> outfile`)
     - Сформировать уникальное имя для оптимизированного объектного файла (outfile)
-    - `/path/to/llvm-bolt objfile -data=fdata_file -o outfile -dyno-stats`
+    - Вызов BOLT:
+    ```
+    llvm-bolt objfile -data=fdata_file -o outfile -dyno-stats
+    ```
     - Вернуть outfile
 2. После обновления записей в БД: 
     - Найти объектные файлы, для которых _суммарное количество
