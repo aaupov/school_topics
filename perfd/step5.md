@@ -17,5 +17,6 @@
         ```
         merge-fdata perf_file1.fdata perf_file2.fdata ... > tmp_fdata
         ```
+    - Удалить промежуточные fdata-файлы (perf_file{1..N}.fdata), оставить только последний (tmp_fdata).
         
 2. Функция возвращает путь к tmp_fdata файлу.
