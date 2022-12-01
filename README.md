@@ -20,7 +20,7 @@
 1. Модуль XFCE для отображения сенсоров Nvidia (прикладное программирование): [bug](https://bugzilla.xfce.org/show_bug.cgi?id=7438), [commit](https://gitlab.xfce.org/panel-plugins/xfce4-sensors-plugin/-/commit/2b46dea7b88caae97408387c98ee5a98bfd74f6c)
 2. Поиск по локальной сети (прикладное): [link](https://github.com/aaupov/skysearch)
 3. [Клиент](https://github.com/aaupov/xcontrol) и [бэкенд](https://github.com/aaupov/uav-server-test) для связи с беспилотным летательным аппаратом (qt, прикладное, сетевое)
-4. Моделирование молекулярных взаимодействий на CUDA (физика) [курс](https://mipt.ru/dbmp/student/files/altkurs/kazennov.php)
+4. Моделирование молекулярных взаимодействий на CUDA (физика): [курс](https://mipt.ru/dbmp/student/files/altkurs/kazennov.php), [код](https://github.com/aaupov/2010-cuda-mipt)
 5. LLVM бэкенд для DSP архитектуры (компилятор) [link](https://mipt-ilab.github.io/), [branch](https://github.com/MIPT-ILab-Compilers/llvm-mdsp/commits/branch_aupov)
 6. Оптимизация функций при помощи генетических алгоритмов (математика)
 7. [Сечение бесконечномерного куба](https://aaupov.github.io/blog/2017/04/22/cube-slicing) (математика)
